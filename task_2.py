@@ -3,7 +3,7 @@ generateId = input("genenrate id ? :")
 num = 1
 
 
-while generateId=="yes" :
+while generateId.strip().lower()=="yes" :
   akiba_id= (f"AKI-{num:04d}")
   name= input("name :")
   age= input("age :")
@@ -15,12 +15,12 @@ while generateId=="yes" :
   +--------------------------------+
   |       AKIBA STUDENT CARD       |
   +--------------------------------+
-  | Name:{name}                    |
-  | ID: {akiba_id}                 |
-  | Department: {department}       |
-  | Year: {year}                   |
-  | University: {university}       |
-  | Phone: {phone}                 |
+  | {"Name : " + name:<31}|
+  | {"ID: " + akiba_id:<31}|
+  | {"Department: " + department:<31}|
+  | {"Year: " + year:<31}|
+  | {"University: " + university:<31}|
+  | {"Phone: " + phone:<31}|
   +--------------------------------+
 
     """)
