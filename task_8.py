@@ -1,23 +1,23 @@
 name = input("Enter your name: ")
-python_score = min(float(input("Enter your python score: ")) ,100)
-math_score = min(float(input("Enter your math score: ")),100)
-english_score = min(float(input("Enter your english score: ")) ,100)
+math_score = min(float(input("Enter your Math score: ")) , 100)
+python_score = min(float(input("Enter your python score: ")), 100)
+english_score = min(float(input("Enter your English score: ")) , 100)
 
-average = round((python_score + math_score + english_score) / 3 , 2)
-
+average = round((math_score + python_score + english_score) / 3 , 2) 
 
 print(f"""
 ========================================
-             STUDENT REPORT CARD
+          STUDENT RESULT
 ========================================
 
-Student Name: {name}
+Student: {name}
 
-Math Score: {math_score} 
-Python Score: {python_score} 
-English Score: {english_score} 
+Python:       {python_score}
+English:      {english_score}
+Mathematics:  {math_score}
 ----------------------------------------
-Average Score: {average}
+Average:      {average}
 ========================================
+
 
 """)
